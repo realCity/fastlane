@@ -150,7 +150,9 @@ module Pilot
       # 3. Localized app  info
       # 4. Localized build info
       # 5. Auto notify enabled with config[:notify_external_testers]
-      update_beta_app_meta(options, build)
+      #
+      # TODO: removed temporarily until this is fixed: https://github.com/fastlane/fastlane/issues/17066#issuecomment-686462098
+      # update_beta_app_meta(options, build)
 
       return if config[:skip_submission]
       if options[:reject_build_waiting_for_review]
